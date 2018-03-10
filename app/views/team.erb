@@ -5,12 +5,12 @@
   <title>Superheros</title>
 </head>
 <body>
-  <h2><%=%></h2>
-  <h3>Team Motto: <%=%></h3>
-  <% %>
-    <h3>Hero Name: <%=%></h3>
-    Hero Power: <%=%><br>
-    Hero Biography: <%=%><br>
+  <h2><%=@team.name%></h2>
+  <h3>Team Motto: <%=@team.motto%></h3>
+  <%@heros.each do |hero|%>
+    <h3>Hero Name: <%=hero.name%></h3>
+    Hero Power: <%=hero.power%><br>
+    Hero Biography: <%=hero.bio%><br>
   <%end%>
 </body>
 </html>
