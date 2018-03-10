@@ -6,15 +6,16 @@
   <h2>Create a Team and Heroes!</h2>
   <form>
     <p>
-      <input type="text" name="team_name" /><br>
-      <input type="text" name="team_motto"/><br>
+      <input type="text" name="team[name]" /><br>
+      <input type="text" name="team[motto]"/><br>
     </p>
     <p>
       <h4>Hero 1</h4>
-      <input type="text" id="hero_name_1" name="team_motto"/><br>
-      <input type="text" id="" name="team_motto"/><br>
-      <input type="text" id="" name="team_motto"/>
+      <input type="text" id="member1_name"  name="team[]"/><br>
+      <input type="text" id="member1_power" name="team[]"/><br>
+      <input type="text" id="member1_bio"   name="team[]"/>
     </p>
+    <p><input type="submit"/></p>
   </form>
 </body>
 </html>
