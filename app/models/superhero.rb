@@ -1,5 +1,5 @@
 class Superhero
-  attr_reader :name, :power, :bio
+  attr_accessor :name, :power, :bio
   HEROES = []
   
   def self.all
