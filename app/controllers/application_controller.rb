@@ -10,6 +10,7 @@ class App < Sinatra::Base
   
   post '/teams' do
     hero_params_a = params[:team].delete("members")
+    hero_params_a.each{|attributes| Superhero.new()}
     team_params_h = params[:team]
     binding.pry
     erb :'team'
