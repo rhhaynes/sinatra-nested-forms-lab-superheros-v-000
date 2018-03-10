@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'pry'
 
 class App < Sinatra::Base
   set :views, Proc.new { File.join(root, "../views/") }
@@ -10,6 +11,7 @@ class App < Sinatra::Base
   post '/teams' do
     hero_params = params.delete(params[:team][:members])
     team_params = params[:team]
+    binding.pry
     erb :'team'
   end
 
