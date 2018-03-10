@@ -6,14 +6,14 @@
   <h2>Create a Team and Heroes!</h2>
   <form action="/team" method="post">
     <p>
-      <input type="text" name="team[name]" /><br>
-      <input type="text" name="team[motto]"/><br>
+      <input type="text" name="team[name]"  placeholder="Enter team name" /><br>
+      <input type="text" name="team[motto]" placeholder="Enter team motto"/><br>
     </p>
     <p>
       <h4>Hero 1</h4>
-      <input type="text" id="member1_name"  name="team[members][][name]"/><br>
-      <input type="text" id="member1_power" name="team[members][][power]"/><br>
-      <input type="text" id="member1_bio"   name="team[members][][bio]"/>
+      <input type="text" id="member1_name"  name="team[members][][name]"  placeholder="Enter hero 1 name" /><br>
+      <input type="text" id="member1_power" name="team[members][][power]" placeholder="Enter hero 1 power"/><br>
+      <input type="text" id="member1_bio"   name="team[members][][bio]"   placeholder="Enter hero 1 bio"  />
     </p>
     <p><input type="submit"/></p>
   </form>
