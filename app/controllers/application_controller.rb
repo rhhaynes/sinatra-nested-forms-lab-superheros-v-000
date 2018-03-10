@@ -9,8 +9,8 @@ class App < Sinatra::Base
   end
   
   post '/teams' do
-    hero_params = params.delete(params[:team][:members])
-    team_params = params[:team]
+    hero_params_a = params.delete(:members)
+    team_params_h = params[:team]
     binding.pry
     erb :'team'
   end
