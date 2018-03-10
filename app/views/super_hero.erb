@@ -1,1 +1,35 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Superheros</title>
+</head>
+<body>
+  <h2>Create a Team and Heroes!</h2>
+  <form action="/teams" method="post">
+    <p>
+      <input type="text" name="team[name]"  placeholder="Enter team name" /><br>
+      <input type="text" name="team[motto]" placeholder="Enter team motto"/><br>
+    </p>
+    <p>
+      <strong>Hero 1</strong><br>
+      <input type="text" id="member1_name"  name="team[members][][name]"  placeholder="Enter hero 1 name" /><br>
+      <input type="text" id="member1_power" name="team[members][][power]" placeholder="Enter hero 1 power"/><br>
+      <input type="text" id="member1_bio"   name="team[members][][bio]"   placeholder="Enter hero 1 bio"  />
+    </p>
+    <p>
+      <strong>Hero 2</strong><br>
+      <input type="text" id="member2_name"  name="team[members][][name]"  placeholder="Enter hero 2 name" /><br>
+      <input type="text" id="member2_power" name="team[members][][power]" placeholder="Enter hero 2 power"/><br>
+      <input type="text" id="member2_bio"   name="team[members][][bio]"   placeholder="Enter hero 2 bio"  />
+    </p>
+    <p>
+      <strong>Hero 3</strong><br>
+      <input type="text" id="member3_name"  name="team[members][][name]"  placeholder="Enter hero 3 name" /><br>
+      <input type="text" id="member3_power" name="team[members][][power]" placeholder="Enter hero 3 power"/><br>
+      <input type="text" id="member3_bio"   name="team[members][][bio]"   placeholder="Enter hero 3 bio"  />
+    </p>
+    <p><input type="submit" value="submit"/></p>
+  </form>
+</body>
+</html>
